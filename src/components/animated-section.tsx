@@ -36,7 +36,7 @@ export function AnimatedSection({ children }: { children: React.ReactNode }) {
   return (
     <div
       ref={ref}
-      className={`transition-opacity duration-1000 ease-out ${isVisible ? 'opacity-100 animate-fade-in-up' : 'opacity-0'}`}
+      className={`transition-all duration-700 ease-out ${isVisible ? 'opacity-100 animate-fade-in-up' : 'opacity-0 blur-sm'}`}
     >
       {children}
     </div>
