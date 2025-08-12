@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center mb-4">
-              <Image src="/logo.png" alt="Lonely Corporation Logo" width={32} height={32} className="mr-2 rounded-full" />
+              <Image src="/logo.png" alt="Lonely Corporation Logo" width={32} height={32} className="mr-2 rounded-md" />
               <h3 className="text-xl font-bold">Lonely Corporation</h3>
             </div>
             <p className="text-muted-foreground text-sm">
