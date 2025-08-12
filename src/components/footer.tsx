@@ -37,7 +37,7 @@ export function Footer() {
               <Link href="https://github.com/Lonely-Corporation" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <GitBranch className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
               </Link>
-              <a href="https://discord.com/users/1359849892931178546" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <a href="https://discord.gg/ZD6fX2c2RA" target="_blank" rel="noopener noreferrer" aria-label="Discord">
                 <MessageCircle className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
               </a>
             </div>
