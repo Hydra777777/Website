@@ -9,15 +9,13 @@ export function AnimatedSection({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
+        // Set visibility based on whether the element is intersecting
+        setIsVisible(entry.isIntersecting);
       },
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1,
+        threshold: 0.1, // Trigger when 10% of the element is visible
       }
     );
 
@@ -36,7 +34,7 @@ export function AnimatedSection({ children }: { children: React.ReactNode }) {
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ease-out ${isVisible ? 'opacity-100 animate-fade-in-up' : 'opacity-0 blur-sm'}`}
+      className={`transition-all duration-700 ease-out ${isVisible ? 'opacity-100 animate-fade-in-up' : 'opacity-0 blur-sm translate-y-10'}`}
     >
       {children}
     </div>
