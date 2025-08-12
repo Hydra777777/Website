@@ -48,8 +48,8 @@ export function Products() {
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {products.map((product) => {
-            const cardContent = (
+          {products.map((product) => (
+            <div key={product.title}>
               <Card
                 className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20 h-full"
               >
@@ -73,17 +73,8 @@ export function Products() {
                   )}
                 </CardFooter>
               </Card>
-            );
-
-            if (product.link) {
-              return (
-                <Link href={product.link} key={product.title} target="_blank" rel="noopener noreferrer" className="contents">
-                  {cardContent}
-                </Link>
-              );
-            }
-            return <div key={product.title}>{cardContent}</div>;
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </section>

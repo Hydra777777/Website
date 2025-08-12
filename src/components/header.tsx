@@ -11,7 +11,7 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 hidden md:flex">
            <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Image src="/logo.jpg" alt="Lonely Corporation Logo" width={24} height={24} className="rounded-full" />
+            <Image src="/logo.png" alt="Lonely Corporation Logo" width={24} height={24} className="rounded-full" />
             <span className="hidden font-bold sm:inline-block">Lonely Corporation</span>
           </Link>
           <nav className="flex items-center gap-6 text-sm">
