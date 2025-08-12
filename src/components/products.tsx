@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   Card,
   CardContent,
@@ -7,7 +8,8 @@ import {
   CardFooter,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Server, Shield, Link2 } from 'lucide-react';
+import { Server, Shield, Link2, Github } from 'lucide-react';
+import { Button } from './ui/button';
 
 const products = [
   {
@@ -16,6 +18,7 @@ const products = [
     description: 'A fast and reliable proxy service powered by Ultraviolet, currently under active development.',
     status: 'In Development',
     variant: 'secondary',
+    link: 'https://github.com/Lonely-Corporation/The-Lonely-Proxy',
   },
   {
     icon: <Shield className="h-8 w-8 text-primary" />,
@@ -30,6 +33,7 @@ const products = [
     description: 'Check if a link is blocked by Linewize school filters. Ready to use.',
     status: 'Finished',
     variant: 'default',
+    link: 'https://github.com/Lonely-Corporation/Is-the-Proxy-Blocked',
   },
 ];
 
@@ -43,26 +47,43 @@ export function Products() {
             We provide robust solutions for navigating the digital landscape securely and efficiently.
           </p>
         </div>
-        <div className="grid gap-8 md:grid-cols-3">
-          {products.map((product) => (
-            <Card
-              key={product.title}
-              className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20"
-            >
-              <CardHeader className="flex flex-row items-start gap-4 pb-4">
-                {product.icon}
-                <div className="flex-1">
-                  <CardTitle>{product.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="flex-1">
-                <CardDescription>{product.description}</CardDescription>
-              </CardContent>
-              <CardFooter>
-                <Badge variant={product.variant as any}>{product.status}</Badge>
-              </CardFooter>
-            </Card>
-          ))}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {products.map((product) => {
+            const cardContent = (
+              <Card
+                className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20 h-full"
+              >
+                <CardHeader className="flex flex-row items-start gap-4 pb-4">
+                  {product.icon}
+                  <div className="flex-1">
+                    <CardTitle>{product.title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent className="flex-1">
+                  <CardDescription>{product.description}</CardDescription>
+                </CardContent>
+                <CardFooter className="flex justify-between items-center">
+                  <Badge variant={product.variant as any}>{product.status}</Badge>
+                  {product.link && (
+                    <Button variant="ghost" size="icon" asChild>
+                      <Link href={product.link} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-5 w-5" />
+                      </Link>
+                    </Button>
+                  )}
+                </CardFooter>
+              </Card>
+            );
+
+            if (product.link) {
+              return (
+                <Link href={product.link} key={product.title} target="_blank" rel="noopener noreferrer" className="contents">
+                  {cardContent}
+                </Link>
+              );
+            }
+            return cardContent;
+          })}
         </div>
       </div>
     </section>
