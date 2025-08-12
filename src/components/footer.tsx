@@ -1,5 +1,6 @@
-import { Bot, GitBranch, MessageCircle } from "lucide-react";
+import { GitBranch, MessageCircle } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center mb-4">
-              <Bot className="h-8 w-8 mr-2 text-primary" />
+              <Image src="/logo.jpg" alt="Lonely Corporation Logo" width={32} height={32} className="mr-2 rounded-full" />
               <h3 className="text-xl font-bold">Lonely Corporation</h3>
             </div>
             <p className="text-muted-foreground text-sm">
