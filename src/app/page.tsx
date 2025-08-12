@@ -3,7 +3,6 @@ import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Products } from "@/components/products";
 import { Mission } from "@/components/mission";
-import { FaqSection } from "@/components/faq-section";
 import { Community } from "@/components/community";
 import { AnimatedSection } from "@/components/animated-section";
 
@@ -20,9 +19,6 @@ export default function Home() {
         </AnimatedSection>
         <AnimatedSection>
           <Mission />
-        </AnimatedSection>
-        <AnimatedSection>
-          <FaqSection />
         </AnimatedSection>
         <AnimatedSection>
           <Community />

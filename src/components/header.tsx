@@ -28,12 +28,6 @@ export function Header() {
               Mission
             </Link>
             <Link
-              href="#faq"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-            >
-              FAQ
-            </Link>
-            <Link
               href="#community"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
