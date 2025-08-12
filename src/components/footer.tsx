@@ -21,14 +21,6 @@ export function Footer() {
             <ul className="space-y-2">
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">Team</Link></li>
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">News</Link></li>
-              <li><Link href="#mission" className="text-sm text-muted-foreground hover:text-primary">Mission</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-3">Legal</h4>
-            <ul className="space-y-2">
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">Privacy Policy</Link></li>
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">Terms of Service</Link></li>
             </ul>
           </div>
           <div>
