@@ -51,7 +51,6 @@ export function Products() {
           {products.map((product) => {
             const cardContent = (
               <Card
-                key={product.title}
                 className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20 h-full"
               >
                 <CardHeader className="flex flex-row items-start gap-4 pb-4">
