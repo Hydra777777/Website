@@ -11,7 +11,7 @@ export function Hero() {
             From Lonely Corporation
           </div>
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-            ProxyPilot
+            Lonely Corporation
           </h1>
           <p className="text-lg text-muted-foreground md:text-xl">
             Unleash the power of the web with our cutting-edge proxies and bypass exploits.
