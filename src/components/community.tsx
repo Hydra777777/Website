@@ -15,7 +15,7 @@ export function Community() {
                 src="https://discord.com/widget?id=1359849892931178546&theme=dark"
                 width="350"
                 height="500"
-                allowTransparency={true}
+                allowtransparency="true"
                 frameBorder="0"
                 sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                 title="Lonely Corporation Discord Widget"
