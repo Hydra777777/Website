@@ -13,7 +13,7 @@ const products = [
   {
     icon: <Server className="h-8 w-8 text-primary" />,
     title: 'Proxy',
-    description: 'A fast and reliable proxy service, currently under active development.',
+    description: 'A fast and reliable proxy service powered by Ultraviolet, currently under active development.',
     status: 'In Development',
     variant: 'secondary',
   },
