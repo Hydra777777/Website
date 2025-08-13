@@ -34,11 +34,11 @@ const products = [
     variant: 'outline',
   },
   {
-    icon: <Globe className="h-8 w-8 text-primary" />,
-    title: 'Proxy Integrated Browser',
-    description: 'A custom browser with integrated proxy features for seamless access.',
-    status: 'Not Started',
-    variant: 'outline',
+    icon: <Link2 className="h-8 w-8 text-primary" />,
+    title: 'Linewize Link Checker',
+    description: 'A tool to instantly check if a URL is blocked by Linewize filters.',
+    status: 'Finished',
+    variant: 'default',
   },
   {
     icon: <Server className="h-8 w-8 text-primary" />,
@@ -49,11 +49,11 @@ const products = [
     link: 'https://github.com/Lonely-Corporation/The-Lonely-Proxy',
   },
   {
-    icon: <Link2 className="h-8 w-8 text-primary" />,
-    title: 'Linewize Link Checker',
-    description: 'A tool to instantly check if a URL is blocked by Linewize filters.',
-    status: 'Finished',
-    variant: 'default',
+    icon: <Globe className="h-8 w-8 text-primary" />,
+    title: 'Proxy Integrated Browser',
+    description: 'A custom browser with integrated proxy features for seamless access.',
+    status: 'Not Started',
+    variant: 'outline',
   },
   {
     icon: <CircleHelp className="h-8 w-8 text-primary" />,
@@ -86,6 +86,7 @@ export function Products() {
             opts={{
               align: "start",
               loop: true,
+              startIndex: 3,
             }}
             className="w-full"
           >
