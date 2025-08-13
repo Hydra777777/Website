@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="w-full py-24 md:py-32 lg:py-40 bg-background">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center text-center space-y-4">
+        <div className="flex flex-col items-center space-y-4 text-center">
           <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
             From Lonely Corporation
           </div>
