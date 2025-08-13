@@ -8,10 +8,31 @@ import {
   CardFooter,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Server, Shield, Link2, Github } from 'lucide-react';
+import { Server, Shield, Link2, Github, Package } from 'lucide-react';
 import { Button } from './ui/button';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const products = [
+  {
+    icon: <Package className="h-8 w-8 text-primary" />,
+    title: 'Stealth VPN',
+    description: 'A conceptual VPN service designed for maximum privacy and bypassing deep packet inspection.',
+    status: 'Planned',
+    variant: 'secondary',
+  },
+    {
+    icon: <Package className="h-8 w-8 text-primary" />,
+    title: 'Decentralized Proxy Network',
+    description: 'Harnessing peer-to-peer technology for a truly distributed and unstoppable proxy network.',
+    status: 'Researching',
+    variant: 'secondary',
+  },
   {
     icon: <Server className="h-8 w-8 text-primary" />,
     title: 'Proxy',
@@ -35,6 +56,20 @@ const products = [
     variant: 'default',
     link: 'https://github.com/Lonely-Corporation/Is-the-Proxy-Blocked',
   },
+  {
+    icon: <Package className="h-8 w-8 text-primary" />,
+    title: 'Ad-Hoc Secure Tunnel',
+    description: 'A lightweight tool for creating instant, secure tunnels between devices.',
+    status: 'Planned',
+    variant: 'secondary',
+  },
+  {
+    icon: <Package className="h-8 w-8 text-primary" />,
+    title: 'DNS Cloak',
+    description: 'A service to obfuscate DNS requests, preventing network-level censorship and tracking.',
+    status: 'Researching',
+    variant: 'secondary',
+  },
 ];
 
 export function Products() {
@@ -47,34 +82,48 @@ export function Products() {
             We provide robust solutions for navigating the digital landscape securely and efficiently.
           </p>
         </div>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {products.map((product) => (
-            <div key={product.title}>
-              <Card
-                className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20 h-full"
-              >
-                <CardHeader className="flex flex-row items-start gap-4 pb-4">
-                  {product.icon}
-                  <div className="flex-1">
-                    <CardTitle>{product.title}</CardTitle>
+        <div className="relative">
+           <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {products.map((product, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card
+                      className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20 h-full"
+                    >
+                      <CardHeader className="flex flex-row items-start gap-4 pb-4">
+                        {product.icon}
+                        <div className="flex-1">
+                          <CardTitle>{product.title}</CardTitle>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="flex-1">
+                        <CardDescription>{product.description}</CardDescription>
+                      </CardContent>
+                      <CardFooter className="flex justify-between items-center">
+                        <Badge variant={product.variant as any}>{product.status}</Badge>
+                        {product.link && (
+                          <Button variant="ghost" size="icon" asChild>
+                            <Link href={product.link} target="_blank" rel="noopener noreferrer">
+                              <Github className="h-5 w-5" />
+                            </Link>
+                          </Button>
+                        )}
+                      </CardFooter>
+                    </Card>
                   </div>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <CardDescription>{product.description}</CardDescription>
-                </CardContent>
-                <CardFooter className="flex justify-between items-center">
-                  <Badge variant={product.variant as any}>{product.status}</Badge>
-                  {product.link && (
-                    <Button variant="ghost" size="icon" asChild>
-                      <Link href={product.link} target="_blank" rel="noopener noreferrer">
-                        <Github className="h-5 w-5" />
-                      </Link>
-                    </Button>
-                  )}
-                </CardFooter>
-              </Card>
-            </div>
-          ))}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 transform -translate-x-8 hidden sm:flex" />
+            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 transform translate-x-8 hidden sm:flex" />
+          </Carousel>
         </div>
       </div>
     </section>
