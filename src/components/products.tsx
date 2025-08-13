@@ -71,18 +71,17 @@ export function Products() {
             </p>
           </div>
         </AnimatedSection>
-        <div className="relative">
+        <div className="relative max-w-6xl mx-auto">
           <Carousel
             opts={{
               align: "start",
-              loop: true,
             }}
-            className="w-full max-w-6xl mx-auto"
+            className="w-full"
           >
             <CarouselContent>
               {products.map((product, index) => (
-                <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2 h-full">
+                <CarouselItem key={index} className="p-2 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="h-full">
                     <Card
                       className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20 h-full"
                     >
@@ -110,8 +109,8 @@ export function Products() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-[-1rem] top-1/2 -translate-y-1/2 transform hidden sm:flex" />
-            <CarouselNext className="absolute right-[-1rem] top-1/2 -translate-y-1/2 transform hidden sm:flex" />
+            <CarouselPrevious className="absolute left-2 md:left-[-2rem] lg:left-[-3rem] top-1/2 -translate-y-1/2 transform flex" />
+            <CarouselNext className="absolute right-2 md:right-[-2rem] lg:right-[-3rem] top-1/2 -translate-y-1/2 transform flex" />
           </Carousel>
         </div>
       </div>
