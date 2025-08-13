@@ -8,7 +8,7 @@ import {
   CardFooter,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Server, Shield, Link2, Github, Package, CircleHelp } from 'lucide-react';
+import { Server, Shield, Link2, Github, Package, CircleHelp, Globe } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Carousel,
@@ -26,7 +26,7 @@ const products = [
     status: 'Planned',
     variant: 'outline',
   },
-    {
+  {
     icon: <CircleHelp className="h-8 w-8 text-primary" />,
     title: 'Placeholder',
     description: 'Your next great idea could be here. Stay tuned for future developments.',
@@ -34,7 +34,7 @@ const products = [
     variant: 'outline',
   },
   {
-    icon: <Package className="h-8 w-8 text-primary" />,
+    icon: <Globe className="h-8 w-8 text-primary" />,
     title: 'Proxy Integrated Browser',
     description: 'A custom browser with integrated proxy features for seamless access.',
     status: 'Not Started',
