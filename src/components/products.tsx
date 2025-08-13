@@ -28,13 +28,6 @@ const products = [
     variant: 'outline',
   },
   {
-    icon: <CircleHelp className="h-8 w-8 text-primary" />,
-    title: 'Placeholder',
-    description: 'Your next great idea could be here. Stay tuned for future developments.',
-    status: 'Planned',
-    variant: 'outline',
-  },
-  {
     icon: <Link2 className="h-8 w-8 text-primary" />,
     title: 'Linewize Link Checker',
     description: 'A tool to instantly check if a URL is blocked by Linewize filters.',
@@ -70,12 +63,19 @@ const products = [
     status: 'Planned',
     variant: 'outline',
   },
+  {
+    icon: <CircleHelp className="h-8 w-8 text-primary" />,
+    title: 'Placeholder',
+    description: 'Your next great idea could be here. Stay tuned for future developments.',
+    status: 'Planned',
+    variant: 'outline',
+  },
 ];
 
 export function Products() {
   return (
-    <AnimatedSection>
-      <section id="products" className="w-full py-16 md:py-24 bg-secondary">
+    <section id="products" className="w-full py-16 md:py-24 bg-secondary">
+      <AnimatedSection>
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-2xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Core Services</h2>
@@ -88,7 +88,7 @@ export function Products() {
               opts={{
                 align: "start",
                 loop: true,
-                startIndex: 3,
+                startIndex: 2,
               }}
               className="w-full"
             >
@@ -128,7 +128,7 @@ export function Products() {
             </Carousel>
           </div>
         </div>
-      </section>
-    </AnimatedSection>
+      </AnimatedSection>
+    </section>
   );
 }
