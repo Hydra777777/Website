@@ -76,13 +76,12 @@ export function Products() {
             opts={{
               align: "start",
               loop: true,
-              startIndex: 1,
             }}
             className="w-full"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-4">
               {products.map((product, index) => (
-                <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
                     <Card
                       className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20 h-full"
