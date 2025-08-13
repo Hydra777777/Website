@@ -15,32 +15,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
-        <div className="mr-4 hidden md:flex">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Image src="/logo.png" alt="Lonely Corporation Logo" width={24} height={24} className="rounded-md" />
-            <span className="font-bold">Lonely Corporation</span>
-          </Link>
-          <nav className="flex items-center gap-6 text-sm">
-            <Link
-              href="#products"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-            >
-              Products
-            </Link>
-            <Link
-              href="#mission"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-            >
-              Mission
-            </Link>
-            <Link
-              href="#community"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-            >
-              Community
-            </Link>
-          </nav>
-        </div>
+        {/* Mobile Menu */}
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
@@ -64,6 +39,38 @@ export function Header() {
             </SheetContent>
           </Sheet>
         </div>
+
+        {/* Desktop Logo */}
+        <div className="hidden md:flex">
+            <Link href="/" className="mr-6 flex items-center space-x-2">
+                <Image src="/logo.png" alt="Lonely Corporation Logo" width={24} height={24} className="rounded-md" />
+                <span className="font-bold">Lonely Corporation</span>
+            </Link>
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex flex-1 items-center justify-center gap-6 text-sm">
+          <Link
+            href="#products"
+            className="transition-colors hover:text-foreground/80 text-foreground/60"
+          >
+            Products
+          </Link>
+          <Link
+            href="#mission"
+            className="transition-colors hover:text-foreground/80 text-foreground/60"
+          >
+            Mission
+          </Link>
+          <Link
+            href="#community"
+            className="transition-colors hover:text-foreground/80 text-foreground/60"
+          >
+            Community
+          </Link>
+        </nav>
+        
+        {/* Search Bar */}
         <div className="flex flex-1 items-center justify-end space-x-2">
           <div className="w-full flex-1 md:w-auto md:flex-none">
             <form className="w-full max-w-sm">
