@@ -8,7 +8,7 @@ import {
   CardFooter,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Server, CircleHelp, Globe, Link2 } from 'lucide-react';
+import { Server, Globe, Link2, CircleHelp } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Carousel,
@@ -71,7 +71,7 @@ export function Products() {
             </p>
           </div>
         </AnimatedSection>
-        <div className="relative">
+        <div className="relative px-10">
           <Carousel
             opts={{
               align: "start",
