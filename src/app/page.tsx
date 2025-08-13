@@ -14,9 +14,7 @@ export default function Home() {
         <AnimatedSection>
           <Hero />
         </AnimatedSection>
-        <AnimatedSection>
-          <Products />
-        </AnimatedSection>
+        <Products />
         <AnimatedSection>
           <Mission />
         </AnimatedSection>
