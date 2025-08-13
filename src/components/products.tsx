@@ -27,6 +27,7 @@ const products = [
     description: 'A tool to instantly check if a URL is blocked by Linewize filters.',
     status: 'Finished',
     variant: 'default',
+    link: 'https://github.com/Lonely-Corporation/Is-the-Proxy-Blocked',
   },
   {
     icon: <Server className="h-8 w-8 text-primary" />,
