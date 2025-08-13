@@ -20,18 +20,11 @@ import {
 
 const products = [
   {
-    icon: <Package className="h-8 w-8 text-primary" />,
-    title: 'Placeholder Product',
-    description: 'This is a placeholder for a future product. Details to come.',
-    status: 'Coming Soon',
-    variant: 'outline',
-  },
-  {
-    icon: <Package className="h-8 w-8 text-primary" />,
-    title: 'Placeholder Product',
-    description: 'This is a placeholder for a future product. Details to come.',
-    status: 'Coming Soon',
-    variant: 'outline',
+    icon: <Shield className="h-8 w-8 text-primary" />,
+    title: 'Bypass Exploit',
+    description: 'A sophisticated tool for bypassing web restrictions, under development.',
+    status: 'In Development',
+    variant: 'secondary',
   },
   {
     icon: <Server className="h-8 w-8 text-primary" />,
@@ -42,17 +35,10 @@ const products = [
     link: 'https://github.com/Lonely-Corporation/The-Lonely-Proxy',
   },
     {
-    icon: <Package className="h-8 w-8 text-primary" />,
-    title: 'Placeholder Product',
-    description: 'This is a placeholder for a future product. Details to come.',
-    status: 'Coming Soon',
-    variant: 'outline',
-  },
-  {
-    icon: <Package className="h-8 w-8 text-primary" />,
-    title: 'Placeholder Product',
-    description: 'This is a placeholder for a future product. Details to come.',
-    status: 'Coming Soon',
+    icon: <Link2 className="h-8 w-8 text-primary" />,
+    title: 'URL Shortener',
+    description: 'A service for creating short, manageable links. Planned for future development.',
+    status: 'Planned',
     variant: 'outline',
   },
 ];
