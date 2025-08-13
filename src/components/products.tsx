@@ -29,6 +29,13 @@ const products = [
     variant: 'outline',
   },
   {
+    icon: <Link2 className="h-8 w-8 text-primary" />,
+    title: 'Linewize Link Checker',
+    description: 'A tool to instantly check if a URL is blocked by Linewize filters.',
+    status: 'Finished',
+    variant: 'default',
+  },
+  {
     icon: <Server className="h-8 w-8 text-primary" />,
     title: 'Proxy',
     description: 'A fast and reliable proxy service powered by Ultraviolet, under active development.',
@@ -42,13 +49,6 @@ const products = [
     description: 'A custom browser with integrated proxy features for seamless access.',
     status: 'Not Started',
     variant: 'outline',
-  },
-  {
-    icon: <Link2 className="h-8 w-8 text-primary" />,
-    title: 'Linewize Link Checker',
-    description: 'A tool to instantly check if a URL is blocked by Linewize filters.',
-    status: 'Finished',
-    variant: 'default',
   },
   {
     icon: <CircleHelp className="h-8 w-8 text-primary" />,
@@ -81,7 +81,7 @@ export function Products() {
           >
             <CarouselContent>
               {products.map((product, index) => (
-                <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
                     <Card
                       className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20 h-full"
