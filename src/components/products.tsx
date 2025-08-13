@@ -8,7 +8,7 @@ import {
   CardFooter,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Server, Shield, Link2, Github, Package } from 'lucide-react';
+import { Server, Shield, Link2, Github, Package, CircleHelp } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Carousel,
@@ -20,24 +20,52 @@ import {
 
 const products = [
   {
-    icon: <Shield className="h-8 w-8 text-primary" />,
-    title: 'Bypass Exploit',
-    description: 'A sophisticated tool for bypassing web restrictions, under development.',
-    status: 'In Development',
-    variant: 'secondary',
+    icon: <CircleHelp className="h-8 w-8 text-primary" />,
+    title: 'Placeholder',
+    description: 'Your next great idea could be here. Stay tuned for future developments.',
+    status: 'Planned',
+    variant: 'outline',
+  },
+    {
+    icon: <CircleHelp className="h-8 w-8 text-primary" />,
+    title: 'Placeholder',
+    description: 'Your next great idea could be here. Stay tuned for future developments.',
+    status: 'Planned',
+    variant: 'outline',
+  },
+  {
+    icon: <Package className="h-8 w-8 text-primary" />,
+    title: 'Proxy Integrated Browser',
+    description: 'A custom browser with integrated proxy features for seamless access.',
+    status: 'Not Started',
+    variant: 'outline',
   },
   {
     icon: <Server className="h-8 w-8 text-primary" />,
     title: 'Proxy',
-    description: 'A fast and reliable proxy service powered by Ultraviolet, currently under active development.',
+    description: 'A fast and reliable proxy service powered by Ultraviolet, under active development.',
     status: 'In Development',
     variant: 'secondary',
     link: 'https://github.com/Lonely-Corporation/The-Lonely-Proxy',
   },
-    {
+  {
     icon: <Link2 className="h-8 w-8 text-primary" />,
-    title: 'URL Shortener',
-    description: 'A service for creating short, manageable links. Planned for future development.',
+    title: 'Linewize Link Checker',
+    description: 'A tool to instantly check if a URL is blocked by Linewize filters.',
+    status: 'Finished',
+    variant: 'default',
+  },
+  {
+    icon: <CircleHelp className="h-8 w-8 text-primary" />,
+    title: 'Placeholder',
+    description: 'Your next great idea could be here. Stay tuned for future developments.',
+    status: 'Planned',
+    variant: 'outline',
+  },
+  {
+    icon: <CircleHelp className="h-8 w-8 text-primary" />,
+    title: 'Placeholder',
+    description: 'Your next great idea could be here. Stay tuned for future developments.',
     status: 'Planned',
     variant: 'outline',
   },
