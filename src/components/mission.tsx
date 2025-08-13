@@ -11,7 +11,7 @@ export function Mission() {
               Empowering Digital Freedom
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto lg:mx-0">
-              At Lonely Corporation, we are dedicated to developing pioneering technology that grants users unrestricted and secure access to the digital world. We believe in an open internet and build the tools to make it a reality, especially at school.
+              At Lonely Corporation, we are dedicated to developing pioneering technology that grants users unrestricted and secure access to the digital world. We believe in an open internet and build the tools to make it a reality. Especially at school.
             </p>
           </div>
            <div className="flex justify-center">
