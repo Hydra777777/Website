@@ -15,11 +15,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
-        {/* Mobile Menu & Logo */}
-        <div className="flex items-center md:hidden">
+        {/* Mobile Menu & Search */}
+        <div className="flex items-center md:hidden flex-1">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="mr-2">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
@@ -38,12 +38,24 @@ export function Header() {
               </div>
             </SheetContent>
           </Sheet>
+           <div className="flex-1">
+            <form className="w-full">
+                <div className="relative">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Input
+                    placeholder="Search..."
+                    className="pl-9"
+                    aria-label="Search site"
+                />
+                </div>
+            </form>
+          </div>
         </div>
         
         {/* Desktop Header Layout */}
-        <div className="hidden md:flex flex-1 items-center">
+        <div className="hidden md:flex flex-1 items-center justify-between">
           {/* Left: Logo */}
-          <div className="flex-1 flex justify-start">
+          <div className="flex">
             <Link href="/" className="flex items-center space-x-2">
                 <Image src="/logo.png" alt="Lonely Corporation Logo" width={24} height={24} className="rounded-md" />
                 <span className="font-bold">Lonely Corporation</span>
@@ -73,7 +85,7 @@ export function Header() {
           </nav>
 
           {/* Right: Search Bar */}
-          <div className="flex-1 flex justify-end">
+          <div className="flex justify-end">
             <form className="w-full max-w-sm">
               <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -86,21 +98,6 @@ export function Header() {
             </form>
           </div>
         </div>
-        
-        {/* Mobile search bar - full width */}
-        <div className="flex flex-1 items-center justify-end md:hidden">
-           <form className="w-full">
-              <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                  placeholder="Search..."
-                  className="pl-9"
-                  aria-label="Search site"
-              />
-              </div>
-            </form>
-        </div>
-
       </div>
     </header>
   );
