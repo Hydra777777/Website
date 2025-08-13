@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
+      <div className="container flex h-14 max-w-screen-2xl items-center px-4">
         {/* Mobile Menu & Search */}
         <div className="flex items-center md:hidden flex-1">
           <Sheet>
@@ -55,7 +55,7 @@ export function Header() {
         {/* Desktop Header Layout */}
         <div className="hidden md:flex flex-1 items-center justify-between">
           {/* Left: Logo */}
-          <div className="flex">
+          <div className="flex items-center space-x-2">
             <Link href="/" className="flex items-center space-x-2">
                 <Image src="/logo.png" alt="Lonely Corporation Logo" width={24} height={24} className="rounded-md" />
                 <span className="font-bold">Lonely Corporation</span>
