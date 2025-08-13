@@ -8,7 +8,7 @@ import {
   CardFooter,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Server, Shield, Link2, Github, Package, CircleHelp, Globe } from 'lucide-react';
+import { Server, CircleHelp, Globe, Link2 } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Carousel,
@@ -18,6 +18,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { AnimatedSection } from './animated-section';
+import { Github } from 'lucide-react';
 
 const products = [
   {
@@ -28,19 +29,19 @@ const products = [
     variant: 'outline',
   },
   {
-    icon: <Globe className="h-8 w-8 text-primary" />,
-    title: 'Proxy Integrated Browser',
-    description: 'A custom browser with integrated proxy features for seamless access.',
-    status: 'Not Started',
-    variant: 'outline',
-  },
-  {
     icon: <Server className="h-8 w-8 text-primary" />,
     title: 'Proxy',
     description: 'A fast and reliable proxy service powered by Ultraviolet, under active development.',
     status: 'In Development',
     variant: 'secondary',
     link: 'https://github.com/Lonely-Corporation/The-Lonely-Proxy',
+  },
+  {
+    icon: <Globe className="h-8 w-8 text-primary" />,
+    title: 'Proxy Integrated Browser',
+    description: 'A custom browser with integrated proxy features for seamless access.',
+    status: 'Not Started',
+    variant: 'outline',
   },
   {
     icon: <Link2 className="h-8 w-8 text-primary" />,
