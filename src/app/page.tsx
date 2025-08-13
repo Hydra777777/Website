@@ -5,7 +5,6 @@ import { Products } from "@/components/products";
 import { Mission } from "@/components/mission";
 import { Community } from "@/components/community";
 import { AnimatedSection } from "@/components/animated-section";
-import { FaqSection } from "@/components/faq-section";
 
 export default function Home() {
   return (
@@ -23,9 +22,6 @@ export default function Home() {
         </AnimatedSection>
         <AnimatedSection>
           <Community />
-        </AnimatedSection>
-        <AnimatedSection>
-          <FaqSection />
         </AnimatedSection>
       </main>
       <Footer />
