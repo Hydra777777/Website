@@ -110,8 +110,8 @@ export function Products() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 transform -translate-x-8 hidden sm:flex" />
-            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 transform translate-x-8 hidden sm:flex" />
+            <CarouselPrevious className="absolute left-[-1rem] top-1/2 -translate-y-1/2 transform hidden sm:flex" />
+            <CarouselNext className="absolute right-[-1rem] top-1/2 -translate-y-1/2 transform hidden sm:flex" />
           </Carousel>
         </div>
       </div>
