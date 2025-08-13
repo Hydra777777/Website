@@ -21,17 +21,17 @@ import {
 const products = [
   {
     icon: <Package className="h-8 w-8 text-primary" />,
-    title: 'Stealth VPN',
-    description: 'A conceptual VPN service designed for maximum privacy and bypassing deep packet inspection.',
-    status: 'Planned',
-    variant: 'secondary',
+    title: 'Placeholder Product',
+    description: 'This is a placeholder for a future product. Details to come.',
+    status: 'Coming Soon',
+    variant: 'outline',
   },
-    {
+  {
     icon: <Package className="h-8 w-8 text-primary" />,
-    title: 'Decentralized Proxy Network',
-    description: 'Harnessing peer-to-peer technology for a truly distributed and unstoppable proxy network.',
-    status: 'Researching',
-    variant: 'secondary',
+    title: 'Placeholder Product',
+    description: 'This is a placeholder for a future product. Details to come.',
+    status: 'Coming Soon',
+    variant: 'outline',
   },
   {
     icon: <Server className="h-8 w-8 text-primary" />,
@@ -41,34 +41,19 @@ const products = [
     variant: 'secondary',
     link: 'https://github.com/Lonely-Corporation/The-Lonely-Proxy',
   },
-  {
-    icon: <Shield className="h-8 w-8 text-primary" />,
-    title: 'Proxy Integrated Custom Browser',
-    description: 'A custom browser with our proxy service built-in. Planning stages.',
-    status: 'Not Started',
-    variant: 'destructive',
-  },
-  {
-    icon: <Link2 className="h-8 w-8 text-primary" />,
-    title: 'Linewize Blocked Link Checker',
-    description: 'Check if a link is blocked by Linewize school filters. Ready to use.',
-    status: 'Finished',
-    variant: 'default',
-    link: 'https://github.com/Lonely-Corporation/Is-the-Proxy-Blocked',
+    {
+    icon: <Package className="h-8 w-8 text-primary" />,
+    title: 'Placeholder Product',
+    description: 'This is a placeholder for a future product. Details to come.',
+    status: 'Coming Soon',
+    variant: 'outline',
   },
   {
     icon: <Package className="h-8 w-8 text-primary" />,
-    title: 'Ad-Hoc Secure Tunnel',
-    description: 'A lightweight tool for creating instant, secure tunnels between devices.',
-    status: 'Planned',
-    variant: 'secondary',
-  },
-  {
-    icon: <Package className="h-8 w-8 text-primary" />,
-    title: 'DNS Cloak',
-    description: 'A service to obfuscate DNS requests, preventing network-level censorship and tracking.',
-    status: 'Researching',
-    variant: 'secondary',
+    title: 'Placeholder Product',
+    description: 'This is a placeholder for a future product. Details to come.',
+    status: 'Coming Soon',
+    variant: 'outline',
   },
 ];
 
