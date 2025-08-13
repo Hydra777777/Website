@@ -80,7 +80,7 @@ export function Products() {
           >
             <CarouselContent>
               {products.map((product, index) => (
-                <CarouselItem key={index} className="p-2 basis-full md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="px-10 md:px-2 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="h-full">
                     <Card
                       className="flex flex-col transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-primary/20 h-full"
@@ -109,8 +109,8 @@ export function Products() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-2 md:left-[-2rem] lg:left-[-3rem] top-1/2 -translate-y-1/2 transform flex" />
-            <CarouselNext className="absolute right-2 md:right-[-2rem] lg:right-[-3rem] top-1/2 -translate-y-1/2 transform flex" />
+            <CarouselPrevious className="absolute left-0 md:left-[-2rem] lg:left-[-3rem] top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute right-0 md:right-[-2rem] lg:right-[-3rem] top-1/2 -translate-y-1/2" />
           </Carousel>
         </div>
       </div>
