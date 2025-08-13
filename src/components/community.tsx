@@ -10,10 +10,10 @@ export function Community() {
             </p>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <div className="rounded-lg overflow-hidden shadow-2xl shadow-primary/20">
+            <div className="rounded-lg overflow-hidden shadow-2xl shadow-primary/20 w-full max-w-[350px]">
               <iframe
                 src="https://discord.com/widget?id=1359849892931178546&theme=dark"
-                width="350"
+                width="100%"
                 height="500"
                 allowtransparency="true"
                 frameBorder="0"

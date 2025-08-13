@@ -1,9 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { Search } from "lucide-react";
+import { Search, Menu } from "lucide-react";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
@@ -47,6 +53,29 @@ export function Header() {
                 />
                 </div>
             </form>
+          </div>
+           <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Toggle navigation menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left">
+                <div className="flex flex-col gap-6 pt-6">
+                  <Link href="/" className="mr-6 flex items-center space-x-2">
+                    <Image src="/logo.png" alt="Lonely Corporation Logo" width={24} height={24} className="rounded-md" />
+                    <span className="font-bold">Lonely Corporation</span>
+                  </Link>
+                  <nav className="flex flex-col gap-4">
+                     <Link href="#products" className="text-lg font-medium">Products</Link>
+                     <Link href="#mission" className="text-lg font-medium">Mission</Link>
+                     <Link href="#community" className="text-lg font-medium">Community</Link>
+                  </nav>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
